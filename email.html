@@ -6,6 +6,16 @@
       @media screen and (max-width: 600px) {
         table[class="responsive-table"] {
           width: 100% !important;
+         
+        }
+
+        table[class="responsive-table-columns"]{
+            width:100% !important;
+            padding:10px;
+        }
+
+        a[class="button"]{
+            background-color: rebeccapurple !important;
         }
 
         p[class="responsive-text"] {
@@ -15,9 +25,24 @@
     </style>
   </head>
   <body>
-    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+    <table
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      style="background-color: #eeeeee;margin:0 auto"
+    >
       <tr>
-        <td>
+        <td align="center">
+          <!--Pre-header-->
+          <table>
+            <tr>
+              <td style="color:#eeeeee;font-size: 0">
+                Following up from our interview on Friday
+              </td>
+            </tr>
+          </table>
+
           <!--600px container-->
           <table
             width="600px"
@@ -27,16 +52,69 @@
             border="0"
           >
             <tr>
-              <td align="center" class="responsive-text">
-                <h3>Thank you so much for the interview on Friday</h3>
-                <p align="left">
+              <td class="responsive-text">
+                <h3 align="center">
+                  Thank you so much for the interview on Friday
+                </h3>
+                <p>
                   I was thrilled to hear more about Hyped and the potential
                   future projects you have in the works. I wanted to test out
                   creating a responsive email and so all of this is coded by me.
                 </p>
               </td>
             </tr>
-          </table>
+            <!--Repo Button-->
+            
+              <tr align="center" cellspacing="0" cellpadding="0" border="0"> 
+                <td >
+                  <a
+                    class="button"
+                    href="https://github.com/Joncher/email_followup"
+                    style="text-decoration: none;display:inline-block;background-color: blue;padding: 10px;color:white;border-radius: 4px;"
+                    >Check out the repo</a
+                  >
+                </td>
+              </tr>
+            
+
+            <table cellspacing="0" cellpadding="0" border="0">
+
+                <tr>
+                  <td >
+                    Below is two responsive columns that on mobile will be one
+                    column
+                  </td>
+                </td>
+
+            </table>
+            
+            <table cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td>
+                  <!--column 1-->
+                  <table width="300px" align="right" class="responsive-table-columns" cellspacing="0" cellpadding="0" border="0" style="background-color:lightgray">
+                    <tr>
+                    
+                       
+                    
+                      <td>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quos inventore hic illum. Consequatur praesentium quia
+                        eveniet error repudiandae explicabo omnis deleniti.
+                        Delectus sequi rem nisi architecto, a neque optio magni?
+                      </td>
+                    </tr>
+                  </table>
+                  
+                  <table width="300" align="left" class="responsive-table-columns" cellspacing="0" cellpadding="0" border="0" style="background-color: #ccc3c3">
+                      <tr>
+                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima facilis libero quod hic necessitatibus temporibus voluptas similique? Ad a corrupti, sapiente excepturi, consequatur hic temporibus quidem molestias, repellat mollitia modi.</td>
+                      </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </able>
         </td>
       </tr>
     </table>
