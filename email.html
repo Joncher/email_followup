@@ -2,24 +2,43 @@
 <html>
   <head>
     <title>Email for Joshua at Hyped</title>
-    <link rel="stylesheet" href="style.css" />
+    <style type="text/css">
+      @media screen and (max-width: 600px) {
+        table[class="responsive-table"] {
+          width: 100% !important;
+        }
+
+        p[class="responsive-text"] {
+          max-width: 100% !important;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="email-background">
-      <div class="pre-header">
-        Following up on our interview last Friday
-      </div>
-      <div class="email-container">
-        <h3>Thank you so much for you time last Friday!</h3>
-        <p class="email-body">
-          I was thrill to hear more about Hyped and the potential future project
-          you have in the works. I wanted to test out creating a responsive
-          email and so all of this is coded by me.
-        </p>
-        <div class="repository-link">
-            <a href="https://github.com/Joncher/email_followup">Check out the repo</a>
-      </div>
-
-    </div>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td>
+          <!--600px container-->
+          <table
+            width="600px"
+            class="responsive-table"
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+          >
+            <tr>
+              <td align="center" class="responsive-text">
+                <h3>Thank you so much for the interview on Friday</h3>
+                <p align="left">
+                  I was thrilled to hear more about Hyped and the potential
+                  future projects you have in the works. I wanted to test out
+                  creating a responsive email and so all of this is coded by me.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
